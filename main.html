@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div id="screens">
+			<div id="screens-inner">
+				<div id="screen1">
+					<div class="header">Overview</div>
+					<div class="overview-stack">
+						<div id="next-shift" class="light-colour"><span class="material-icons icon" style="color: #329dc6;">stars</span>Upcoming shift in 2 hours</div>
+						<div class="overview-coloured light-white-colour">
+							<div style="float: left;">3 Jun<br />Wednesday</div>
+							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
+						</div>
+						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
+					</div>
+				</div>
+				<div id="screen2">
+					<div class="header">This week</div>
+					<!--Shifts-->
+					<div class="overview-stack">
+						<div class="overview-no-coloured light-colour">
+							<div style="float: left;">3 Jun<br />Wednesday</div>
+							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
+						</div>
+						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
+					</div>
+					<div class="overview-stack">
+						<div class="overview-coloured light-white-colour">
+							<div style="float: left;">3 Jun<br />Wednesday</div>
+							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
+						</div>
+						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
+					</div>
+					<div class="overview-stack">
+						<div class="overview-no-coloured light-colour">
+							<div style="float: left;">3 Jun<br />Wednesday</div>
+							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
+						</div>
+						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
+					</div>
+					<!--End of shifts-->
+				</div>
+				<div id="screen3">
+					<div class="header">My Timesheets</div>
+					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">chevron_right</span></div>
+					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">chevron_right</span></div>
+					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">chevron_right</span></div>
+					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">chevron_right</span></div>
+					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">chevron_right</span></div>
+				</div>
+				<div>4</div>
+			</div>
+		</div>
+		<div id="menu">
+			<div id="screen1-button"><span class="material-icons">trip_origin</span><br />Overview</div>
+			<div id="screen2-button"><span class="material-icons">assignment</span><br />Work</div>
+			<div id="screen3-button"><span class="material-icons">schedule</span><br />Timesheets</div>
+			<div id="screen3-button"><span class="material-icons">person</span><br />Me</div>
+			<script>
+				document.getElementById("screen1-button").onclick = function(){
+					document.getElementById("screens").style.transform = "translateX(0vw)";
+				};
+				document.getElementById("screen2-button").onclick = function(){
+					document.getElementById("screens").style.transform = "translateX(-100vw)";
+				};
+				document.getElementById("screen3-button").onclick = function(){
+					document.getElementById("screens").style.transform = "translateX(-200vw)";
+				};
+			</script>
+		</div>
+	</body>
+</html>
