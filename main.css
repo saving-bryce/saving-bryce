@@ -58,14 +58,14 @@ body {
 	padding-bottom: 0.75rem;
 	text-align: center;
 	color: #f5fafd;
-	font-size: 1rem;
+	font-size: 1.4rem;
 	margin-bottom: 0.75rem;
 }
 
 .overview-stack {
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0px 0px 5px rgba(0, 0, 255, .2);
+	box-shadow: 0px 0px 0.5rem rgba(0, 0, 255, .2);
 }
 
 .overview-stack > div {
@@ -75,7 +75,7 @@ body {
 	padding-top: 0.4rem;
 }
 
-#next-shift {
+.next-shift {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	font-size: 1rem;
@@ -132,4 +132,31 @@ body {
 
 .material-icons {
 	font-size: 1rem;
+}
+
+.hours-stack {
+	box-shadow: 0px 0px 0.5rem rgba(0, 0, 255, .2);
+	background: #ffffff;
+	padding-bottom: 0.4rem;
+	margin-bottom: 0.7rem;
+}
+
+.hours-stack > div {
+	background: #ffffff;
+	padding-top: 0.4rem;
+	padding-left: 0.7rem;
+	padding-right: 0.7rem;
+	width: 100%;
+}
+
+.total-hours {
+	box-shadow: 0px 0px 0.5rem rgba(0, 0, 255, .2);
+	background: #ffffff;
+	font-size: 1rem;
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	padding-left: 0.7rem;
+	padding-right: 0.7rem;
+	border-left: 0.4rem #00dd00 solid;
+	margin-bottom: 0.7rem;
 }

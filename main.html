@@ -3,7 +3,8 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
-		<meta name="viewport" content="width=device-width, initial-scale=0.25"> 
+		<meta name="viewport" content="width=device-width, initial-scale=0.25">
+		<link rel="manifest" href="./manifest.json">
 	</head>
 	<body>
 		<div id="screens">
@@ -11,14 +12,14 @@
 				<div id="screen1">
 					<div class="header">Overview</div>
 					<div class="overview-stack">
-						<div id="next-shift" class="light-colour"><span class="material-icons icon" style="color: #329dc6;">stars</span>Upcoming shift in 2 hours</div>
+						<div class="light-colour next-shift"><span class="material-icons icon" style="color: #329dc6;">stars</span>Upcoming shift tomorrow</div>
 						<div class="overview-coloured light-white-colour">
-							<div style="float: left;">3 Jun<br />Wednesday</div>
+							<div style="float: left;">7 Jun<br />Sunday</div>
 							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
 						</div>
-						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span style="float: left;" class="light-colour">4:00 pm - 7:00 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
 						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
-						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">57.83</span></div>
 					</div>
 				</div>
 				<div id="screen2">
@@ -26,18 +27,9 @@
 					<!--Shifts-->
 					<div class="overview-stack">
 						<div class="overview-no-coloured light-colour">
-							<div style="float: left;">3 Jun<br />Wednesday</div>
+							<div style="float: left;">1 Jun<br />Monday</div>
 						</div>
-						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
-						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
-						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
-					</div>
-					<div class="overview-stack">
-						<div class="overview-coloured light-white-colour">
-							<div style="float: left;">3 Jun<br />Wednesday</div>
-							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
-						</div>
-						<div><span style="float: left;" class="light-colour">4:30 pm - 7:30 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span style="float: left;" class="light-colour">4:30 pm - 8:00 pm</span><span style="float: right;" class="light-colour">3.5 hrs</span></div>
 						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
 						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
 					</div>
@@ -49,17 +41,66 @@
 						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
 						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
 					</div>
+					<div class="overview-stack">
+						<div class="overview-no-coloured light-colour">
+							<div style="float: left;">5 Jun<br />Friday</div>
+						</div>
+						<div><span style="float: left;" class="light-colour">5:30 pm - 9:30 pm</span><span style="float: right;" class="light-colour">4 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">64.25</span></div>
+					</div>
+					<div class="overview-stack">
+						<div class="overview-coloured light-white-colour">
+							<div style="float: left;">7 Jun<br />Sunday</div>
+							<div style="float: right;"><span class="material-icons icon" style="color: #ffffff;">star</span>Next shift</div>
+						</div>
+						<div><span style="float: left;" class="light-colour">4:00 pm - 7:00 pm</span><span style="float: right;" class="light-colour">3 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div><span style="float: left;"><span class="material-icons icon" style="color: #645dd6;">place</span>98171 - SHELLHABOUR</span><span style="float: right;" class="light-colour">48.19</span></div>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
 					<!--End of shifts-->
 				</div>
 				<div id="screen3">
 					<div class="header">My Timesheets</div>
 					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
-					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
-					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
-					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
-					<div class="timesheet-week light-colour">1 Jun - 7 Jun 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
+					<div class="timesheet-week light-colour">25 May - 31 May 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
+					<div class="timesheet-week light-colour">18 May - 24 May 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
+					<div class="timesheet-week light-colour">11 May - 17 May 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
+					<div class="timesheet-week light-colour">4 May - 10 May 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
+					<div class="timesheet-week light-colour">Apr Jun - 3 May 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
+					<div class="timesheet-week light-colour">20 Apr - 27 Apr 2020<span class="material-icons icon" style="float: right; color: #47a7cc;">arrow_forward_ios</span></div>
 				</div>
-				<div>4</div>
+				<div id="screen4">
+					<div class="header">Timesheets</div>
+					<div class="total-hours light-colour"><span>Total hours</span> <span style="float: right;">10.58 hrs </span></div>
+					<!--Time sheets-->
+					<div class="hours-stack light-colour">
+						<div style="font-size: 1.3rem; background-color: #f7f8f9;">Mon, 1 Jun</div>
+						<div><span style="float: left;">4:31 pm - 8:02 pm <span class="material-icons icon" style="color: #00dd00;">check_circle</span></span><span style="padding-left: 1.3rem; color: #00dd00;">72.15</span><span style="float: right; padding-right: 1.3rem;">3.77 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div style="color: red;"><span class="material-icons icon" style="color: #645dd6;">local_cafe</span>No break clocked</div>
+					</div>
+					
+					<div class="hours-stack light-colour">
+						<div style="font-size: 1.3rem; background-color: #f7f8f9;">Wed, 3 Jun</div>
+						<div><span style="float: left;">4:31 pm - 7:30 pm <span class="material-icons icon" style="color: #00dd00;">check_circle</span></span><span style="padding-left: 1.3rem; color: #00dd00;">49.68</span><span style="float: right; padding-right: 1.3rem;">3 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div style="color: red;"><span class="material-icons icon" style="color: #645dd6;">local_cafe</span>No break clocked</div>
+					</div>
+					
+					<div class="hours-stack light-colour">
+						<div style="font-size: 1.3rem; background-color: #f7f8f9;">Fri, 5 Jun</div>
+						<div><span style="float: left;">5:30 pm - 9:49 pm <span class="material-icons icon" style="color: #00dd00;">check_circle</span></span><span style="padding-left: 1.3rem; color: #00dd00;">100.31</span><span style="float: right; padding-right: 1.3rem;">4.32 hrs</span></div>
+						<div><span class="material-icons icon" style="color: #645dd6;">lens</span>Delivery Expert</div>
+						<div style="color: red;"><span class="material-icons icon" style="color: #645dd6;">local_cafe</span>No break clocked</div>
+					</div>
+					<!--End time sheets-->
+				</div>
 			</div>
 		</div>
 		<div id="menu">
@@ -77,6 +118,12 @@
 				document.getElementById("screen3-button").onclick = function(){
 					document.getElementById("screens").style.transform = "translateX(-200vw)";
 				};
+				var weeks = document.getElementsByClassName("timesheet-week");
+				for (var i = 0; i < weeks.length; i++) {
+					weeks[i].addEventListener('click', function(){
+						document.getElementById("screens").style.transform = "translateX(-300vw)";
+					}, false);
+				}
 			</script>
 		</div>
 	</body>
