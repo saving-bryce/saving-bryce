@@ -13,8 +13,22 @@ function addMessageHandler(client) {
 	client.on("Room.timeline", function(event, room, toStartOfTimeline) {
 		if (event.getType() !== "m.room.message") {
 			return; // only use messages
+		} else {
+			let text = event.event.content.body;
+			let split = string.split(" ");
+			switch (split[0]) {
+				case "clear":
+					document.getElementById("next-shift-date").innerHTML = "";
+					document.getElementById("next-shift-day").innerHTML = "";
+					document.getElementById("next-shift-time").innerHTML = "";
+					document.getElementById("next-shift-hours").innerHTML = "";
+					document.getElementById("next-shift-pay").innerHTML = "";
+					break;
+				case "pay":
+					document.getElementById("next-shift-pay").innerHTML = split[1];
+					break;
+			}
 		}
-		console.log(event.event.content.body);
 	});
 }
 
