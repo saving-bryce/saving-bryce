@@ -11,12 +11,11 @@ async function getClient() {
 
 function addMessageHandler(client) {
 	client.on("Room.timeline", function(event, room, toStartOfTimeline) {
-		console.log(event.event.content);
 		if (event.getType() !== "m.room.message") {
 			return; // only use messages
 		} else {
 			let text = event.event.content.body;
-			let split = string.split(" ");
+			let split = text.split(" ");
 			switch (split[0].toLowerCase()) {
 				case "clear":
 					document.getElementById("next-shift-date").innerHTML = "";
