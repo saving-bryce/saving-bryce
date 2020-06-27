@@ -18,4 +18,4 @@ async function addMessageHandler(client) {
 	});
 }
 
-getClient().then(addMessage);
+getClient().then(addMessageHandler);
