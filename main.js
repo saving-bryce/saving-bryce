@@ -11,7 +11,7 @@ async function getClient() {
 
 function addMessageHandler(client) {
 	client.on("Room.timeline", function(event, room, toStartOfTimeline) {
-		console.log(event.event.content.body);
+		console.log(event.event.content);
 		if (event.getType() !== "m.room.message") {
 			return; // only use messages
 		} else {
