@@ -9,7 +9,7 @@ async function getClient() {
 	return client;
 }
 
-async function addMessageHandler(client) {
+function addMessageHandler(client) {
 	client.on("Room.timeline", function(event, room, toStartOfTimeline) {
 		if (event.getType() !== "m.room.message") {
 			return; // only use messages
