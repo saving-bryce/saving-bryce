@@ -23,9 +23,25 @@ function addMessageHandler(client) {
 					document.getElementById("next-shift-time").innerHTML = "";
 					document.getElementById("next-shift-hours").innerHTML = "";
 					document.getElementById("next-shift-pay").innerHTML = "";
+					document.getElementById("next-shift-time-until").innerHTML = "";
 					break;
-				case "pay":
+				case "next-date":
+					document.getElementById("next-shift-date").innerHTML = split[1];
+					break;
+				case "next-day":
+					document.getElementById("next-shift-day").innerHTML = split[1];
+					break;
+				case "next-time":
+					document.getElementById("next-shift-time").innerHTML = split[1];
+					break;
+				case "next-hours":
+					document.getElementById("next-shift-hours").innerHTML = split[1];
+					break;
+				case "next-pay":
 					document.getElementById("next-shift-pay").innerHTML = split[1];
+					break;
+				case "next-time-until":
+					document.getElementById("next-shift-time-until").innerHTML = split[1];
 					break;
 				default:
 					console.log(text);
