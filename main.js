@@ -11,12 +11,13 @@ async function getClient() {
 
 function addMessageHandler(client) {
 	client.on("Room.timeline", function(event, room, toStartOfTimeline) {
+		console.log(event.event.content.body);
 		if (event.getType() !== "m.room.message") {
 			return; // only use messages
 		} else {
 			let text = event.event.content.body;
 			let split = string.split(" ");
-			switch (split[0]) {
+			switch (split[0].toLowerCase()) {
 				case "clear":
 					document.getElementById("next-shift-date").innerHTML = "";
 					document.getElementById("next-shift-day").innerHTML = "";
@@ -26,6 +27,9 @@ function addMessageHandler(client) {
 					break;
 				case "pay":
 					document.getElementById("next-shift-pay").innerHTML = split[1];
+					break;
+				default:
+					console.log(text);
 					break;
 			}
 		}
